@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Cat Energy - Заказывайте у нас!</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wraper">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+            <p class="logo__text"><strong>Cat</strong> enetgy</p>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul>
+              <li class="main-nav__item">
+                <a href="#">Программа</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <form class="form">
+
+      <h2>Подбор программы</h2>
+      Заполните анкету и мы подберем программу питания для вашего кота
+      <fieldset class="form__cat">
+
+        <label for="cat_name">Имя:*</label>
+        <input type="search" id="cat_name" name="cat name" value="Барсик" required>
+        <label for="cat_weight">Вес (кг):*</label>
+        <input type="search" id="cat_weight" name="cat weight" value="7" required>
+        <label for="cat_age">Возраст (лет):</label>
+        <input type="search" id="cat_age" name="cat age" value="7">
+      </fieldset>
+      <fieldset class="form__radiobutton">
+        <label>
+          <input type="radio" name="cat-slim" value="cat slim" checked>
+          Похудение
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="cat-pro" value="cat pro">
+          Набор массы
+        </label>
+        <label>
+          <input type="radio" name="I-dont-know" value="cat dont know">
+          Не знаю (нужен ваш совет)
+        </label>
+      </fieldset>
+      <fieldset class="form__contacts">
+        <legend>Контакные данные (владельца кота)</legend>
+        <label>e-mail:*
+          <input type="search" name="cat email" value="kuklachev@gmail.com" required>
+        </label>
+        <label>Телефон:*
+          <input type="search" name="cat phone" value="8 (960) 900-60-90" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__comment">
+        <legend>Комментарий</legend>
+        <textarea name="comment" id="comment-field" rows="10">Раскажите о всех повадках кота</textarea>
+      </fieldset>
+      <div class="form__checkbox">
+        Дополнительно
+
+        <label>
+          <input type="checkbox" name="sugarfree">
+          <span>Сахарозаменитель</span>
+        </label>
+        <label>
+          <input type="checkbox" name="water">
+          <span>Питьевая вода</span>
+        </label>
+        <label>
+          <input type="checkbox" name="milk">
+          <span>Молоко</span>
+        </label>
+        <label>
+          <input type="checkbox" name="vitamins">
+          <span>Витамины</span>
+        </label>
+      </div>
+      <div>
+        <button class="button form__submit" type="submit">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </div>
+    </form>
+
+    <div class="contact">
+      <div class="contact__info">
+        <h5>Приглашаем к сотрудничеству диллеров!</h5>
+        <p>ул. Большая<br>
+        Конюшенная, д. 19/8<br>
+        Санкт-Перербург</p>
+      </div>
+      <img class="map" src="#" alt="Мы дружим с географией!">
+    </div>
+
+    <footer class="footer">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
+        </a>
+      </div>
+
+      <div class="social">
+        <img class="social__vk" src="#" alt="ВКонтакте" height="30" width="30">
+        <img class="social__ins" src="#" alt="Инстаграм" height="30" width="30">
+        <img class="social__fb" src="#" alt="Фейсбук" height="30" width="30">
+      </div>
+
+      <div class="vatermark">
+        <p>HTML Academy</p>
+        <img class="vatermark__academy" src="#" alt="logo HTML Academy" height="40" width="30">
+      </div>
+    </footer>
+  </body>
+</html>
