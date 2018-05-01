@@ -12,7 +12,7 @@
     <header>
       <div class="wraper">
         <div class="logo">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
               <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
           </a>
           <p class="logo--text"><strong>Cat</strong> enetgy</p>
@@ -25,10 +25,10 @@
                 <a>Программа</a>
               </li>
               <li class="site-list__item">
-                <a>Каталог продукции</a>
+                <a href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a>Подбор программы</a>
+                <a href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -37,57 +37,72 @@
       </div>
     </header>
 
-    <main class="page__form">
+    <form class="page__form">
 
-        Подбор программы
+      <h2>Подбор программы</h2>
+      Заполните анкету и мы подберем программу питания для вашего кота
+      <fieldset class="form__cat">
 
-        Заполните анкету и мы подберем программу питания для вашего кота
-
-        Имя:*
-
-        Барсик
-
-        Вес (кг):*
-
-        7
-
-        Возраст (лет):
-
-        7
-
-        Похудение
-
-        Набор массы
-        Не знаю (нужен ваш совет)
-
-        Контакные данные
-        (владельца кота)
-
-        e-mail:*
-
-        kuklachev@gmail.com
-
-        Телефон:*
-        8 (960) 900-60-90
-
-        Комментарий
-
-        Раскажите о всех повадках кота
-
+        <label for="cat_name">Имя:*</label>
+        <input type="search" id="cat_name" name="cat name" value="Барсик" required>
+        <label for="cat_weight">Вес (кг):*</label>
+        <input type="search" id="cat_weight" name="cat weight" value="7" required>
+        <label for="cat_age">Возраст (лет):</label>
+        <input type="search" id="cat_age" name="cat age" value="7">
+      </fieldset>
+      <fieldset class="program__radiobutton">
+        <label>
+          <input type="radio" name="cat-slim" value="cat slim" checked>
+          Похудение
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="cat-pro" value="cat pro">
+          Набор массы
+        </label>
+        <label>
+          <input type="radio" name="I-dont-know" value="cat dont know">
+          Не знаю (нужен ваш совет)
+        </label>
+      </fieldset>
+      <fieldset class="form__contacts">
+        <legend>Контакные данные (владельца кота)</legend>
+        <label>e-mail:*
+          <input type="search" name="cat email" value="kuklachev@gmail.com" required>
+        </label>
+        <label>Телефон:*
+          <input type="search" name="cat phone" value="8 (960) 900-60-90" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__comment">
+        <legend>Комментарий</legend>
+        <textarea name="comment" id="comment-field" rows="10">Раскажите о всех повадках кота</textarea>
+      </fieldset>
+      <div class="form__checkbox">
         Дополнительно
 
-        Сахарозаменитель
-
-        Питьевая вода
-
-        Молоко
-
-        Витамины
-
-        Отправить заявку
-
-        *  Обязательные поля
-    </main>
+        <label>
+          <input type="checkbox" name="sugarfree">
+          <span>Сахарозаменитель</span>
+        </label>
+        <label>
+          <input type="checkbox" name="water">
+          <span>Питьевая вода</span>
+        </label>
+        <label>
+          <input type="checkbox" name="milk">
+          <span>Молоко</span>
+        </label>
+        <label>
+          <input type="checkbox" name="vitamins">
+          <span>Витамины</span>
+        </label>
+      </div>
+      <div>
+        <button class="button form__submit" type="submit">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </div>
+    </form>
 
     <div class="contacts">
       <div class="contact__info">
