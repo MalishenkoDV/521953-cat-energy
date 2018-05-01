@@ -4,40 +4,39 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Cat Energy</title>
+    <title>HTML Academy: Cat Energy - Заказывайте у нас!</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="wraper">
         <div class="logo">
-          <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+            <p class="logo__text"><strong>Cat</strong> enetgy</p>
           </a>
-          <p class="logo--text"><strong>Cat</strong> enetgy</p>
         </div>
-        <nav class="header__nav">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul>
-              <li class="site-list__item">
-                <a>Программа</a>
+              <li class="main-nav__item">
+                <a href="#">Программа</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="site-list__item">
-                <a href="#">Подбор программы</a>
+              <li class="main-nav__item">
+                <a href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
         </nav>
-
       </div>
     </header>
 
-    <form class="page__form">
+    <form class="form">
 
       <h2>Подбор программы</h2>
       Заполните анкету и мы подберем программу питания для вашего кота
@@ -50,7 +49,7 @@
         <label for="cat_age">Возраст (лет):</label>
         <input type="search" id="cat_age" name="cat age" value="7">
       </fieldset>
-      <fieldset class="program__radiobutton">
+      <fieldset class="form__radiobutton">
         <label>
           <input type="radio" name="cat-slim" value="cat slim" checked>
           Похудение
@@ -104,7 +103,7 @@
       </div>
     </form>
 
-    <div class="contacts">
+    <div class="contact">
       <div class="contact__info">
         <h5>Приглашаем к сотрудничеству диллеров!</h5>
         <p>ул. Большая<br>
@@ -115,21 +114,22 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__logo-text--wraper">
-        <p class="logo--text"><strong>Cat</strong> Energy</p>
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
+        </a>
       </div>
 
-      <div class="social__buttons">
-        <img class="social__button social--vk" src="#" alt="ВКонтакте" height="30" width="30">
-        <img class="social__button social--ins" src="#" alt="Инстаграм" height="30" width="30">
-        <img class="social__button social--fb" src="#" alt="Фейсбук" height="30" width="30">
+      <div class="social">
+        <img class="social__vk" src="#" alt="ВКонтакте" height="30" width="30">
+        <img class="social__ins" src="#" alt="Инстаграм" height="30" width="30">
+        <img class="social__fb" src="#" alt="Фейсбук" height="30" width="30">
       </div>
 
       <div class="vatermark">
         <p>HTML Academy</p>
         <img class="vatermark__academy" src="#" alt="logo HTML Academy" height="40" width="30">
       </div>
-
     </footer>
   </body>
 </html>

@@ -4,74 +4,68 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Cat Energy</title>
+    <title>HTML Academy: Cat Energy - Каталог</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   </head>
   <body>
 
-    <header>
+  <header class="header">
     <div class="wraper">
       <div class="logo">
-        <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
         </a>
-        <p class="logo--text"><strong>Cat</strong> enetgy</p>
       </div>
-      <nav class="header__nav">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul>
-            <li class="site-list__item">
-              <a>Программа</a>
+            <li class="main-nav__item">
+              <a href="#">Программа</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
-
     </div>
   </header>
 
-    <main class="catalog__main">
-      <h2>Каталог продукции</h2>
+    <main class="main">
+      <h2 class="main__title">Каталог продукции</h2>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
-          <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Pro 500 Г</th>
-            </tr>
+      <div class="catalog">
+
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Pro 500 Г</h4>
+          <table class="item__char">
             <tr>
-              <td>Объем</td>
+              <th>Объем</th>
               <td>500 г</td>
             </tr>
             <tr>
-              <td>Вкус</td>
+              <th>Вкус</th>
               <td>Курица</td>
             </tr>
             <tr>
-              <td>Цена</td>
+              <th>Цена</th>
               <td>700 Р.</td>
             </tr>
           </table>
-          <a class="button">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4>Cat Energy Pro 1000 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Pro 1000 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -87,15 +81,10 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
-
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Pro 500 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Pro 500 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -111,15 +100,11 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Pro 1000 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Pro 1000 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -135,15 +120,11 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Slim 500 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Slim 500 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -159,15 +140,11 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Slim 1000 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Slim 1000 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -183,15 +160,11 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--img" alt="Cat Energy" src="#">
+        <div class="item">
+          <img class="item__img" alt="Cat Energy" src="#">
+          <h4 class="item__name">Cat Energy Slim 500 Г</h4>
           <table class="item-char">
-            <tr class="item__name">
-              <th colspan="2">Cat Energy Slim 500 Г</th>
-            </tr>
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -207,58 +180,71 @@
           </table>
           <a class="button">Заказать</a>
         </div>
-      </div>
 
-      <div class="catalog-item">
-        <div class="catalog-item--wraper">
-          <img class="catalog-item--more" alt="Cat Energy" src="#">
-          <h3>Показать еще 100500 товаров</h3>
+        <div class="item">
+          <img class="catalog__img-more" alt="Cat Energy" src="#">
+          <h4>Показать еще 100500 товаров</h4>
           <p>На самом деле вкусов гораздо больше!</p>
           <a class="button button--grey">Показать все</a>
         </div>
       </div>
 
-      <section>
-
+      <section class="products">
         <h3>Дополнительные товары</h3>
         <ul>
           <li>
-            <div class="added-products">
+            <div class="products__added">
               <h4>Сахарозаменитель</h4>
-              <span>1 упаковка (100г)</span>
-              <span>200 Р.</span>
+              <table>
+                <tr>
+                  <th>1 упаковка (100г)</th>
+                  <td>200 Р.</td>
+                </tr>
+              </table>
               <a class="button">Заказать</a>
             </div>
           </li>
           <li>
-            <div class="added-products">
+            <div class="products__added">
               <h4>Питьевая вода</h4>
-              <span>5 литров</span>
-              <span>50 Р.</span>
+              <table>
+                <tr>
+                  <th>5 литров</th>
+                  <td>50 Р.</td>
+                </tr>
+              </table>
               <a class="button">Заказать</a>
             </div>
           </li>
           <li>
-            <div class="added-products">
+            <div class="products__added">
               <h4>Молоко</h4>
-              <span>1 литр</span>
-              <span>100 Р.</span>
+              <table>
+                <tr>
+                  <th>1 литр</th>
+                  <td>100 Р.</td>
+                </tr>
+              </table>
               <a class="button">Заказать</a>
             </div>
           </li>
           <li>
-            <div class="added-products">
+            <div class="products__added">
               <h4>Витамины</h4>
-              <span>1 упаковка (30г)</span>
-              <span>300 Р.</span>
+              <table>
+                <tr>
+                  <th>1 упаковка (30г)</th>
+                  <td>300 Р.</td>
+                </tr>
+              </table>
               <a class="button">Заказать</a>
             </div>
           </li>
         </ul>
-        <p class="ralated__bonus">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="products__bonus">Закажите все и получите чехол для кота в подарок!</p>
       </section>
 
-      <div class="contacts">
+      <div class="contact">
         <div class="contact__info">
           <h5>Приглашаем к сотрудничеству диллеров!</h5>
           <p>ул. Большая<br>
@@ -268,22 +254,24 @@
         <img class="map" src="#" alt="Мы дружим с географией!">
       </div>
     </main>
+
     <footer class="footer">
-      <div class="footer__logo-text--wraper">
-        <p class="logo--text"><strong>Cat</strong> Energy</p>
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
+        </a>
       </div>
 
-      <div class="social__buttons">
-        <img class="social__button social--vk" src="#" alt="ВКонтакте" height="30" width="30">
-        <img class="social__button social--ins" src="#" alt="Инстаграм" height="30" width="30">
-        <img class="social__button social--fb" src="#" alt="Фейсбук" height="30" width="30">
+      <div class="social">
+        <img class="social__vk" src="#" alt="ВКонтакте" height="30" width="30">
+        <img class="social__ins" src="#" alt="Инстаграм" height="30" width="30">
+        <img class="social__fb" src="#" alt="Фейсбук" height="30" width="30">
       </div>
 
       <div class="vatermark">
         <p>HTML Academy</p>
         <img class="vatermark__academy" src="#" alt="logo HTML Academy" height="40" width="30">
       </div>
-
     </footer>
   </body>
 </html>

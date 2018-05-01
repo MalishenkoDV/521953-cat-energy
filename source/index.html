@@ -4,68 +4,66 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Cat Energy</title>
+    <title>HTML Academy: Cat Energy - Центральная страничка</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   </head>
   <body>
 
-    <header>
+    <header class="header">
     <div class="wraper">
       <div class="logo">
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="img/logotype-mobile.svg" width="30" height="30" alt="Cat enetgy">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
         </a>
-        <p class="logo--text"><strong>Cat</strong> enetgy</p>
       </div>
-      <nav class="header__nav">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">Программа</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
-
     </div>
   </header>
 
 
     <main class="promo">
-      <h1>Функциональное питание для котов</h1>
+      <h2>Функциональное питание для котов</h2>
       <p>Занялся собой? Займись котом!</p>
       <a class="button" href="form.thml">подобрать программу</a>
     </main>
 
     <section>
-
-      <div class="program_for_what">
-        <img class="program__logo logo--slim" src="#" alt="SLIM программа">
+      <div class="program">
+        <img class="program__logo logo-slim" src="#" alt="SLIM программа">
         <h3>Похудение</h3>
         <p>Ваш кот весит больше собаки и утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <hr>
-        <a class="program__redirect--arrow" href="catalog.html">Каталог Slim</a>
+        <a class="program__redirect-arrow" href="catalog.html"><h4>Каталог Slim</h4></a>
       </div>
-      <div>
-        <img class="program__logo logo--pro" src="#" alt="PRO программа">
+
+      <div class="program">
+        <img class="program__logo logo-pro" src="#" alt="PRO программа">
         <h3>Набор массы</h3>
         <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <hr>
-        <a class="program__redirect--arrow" href="catalog.html">Каталог Pro</a>
+        <a class="program__redirect-arrow" href="catalog.html"><h4>Каталог Pro</h4></a>
       </div>
-
     </section>
 
-    <section >
-      <h3 class="section__title">Как это работает</h3>
+    <section class="h-i-w">
+      <h2>Как это работает</h2>
       <div class="h-i-w__wraper">
         <img class="h-i-w__logo" src="#" height="60" width="60" alt="h-i-w__icon h-i-w__leaf">
         <p>Функциональное питание содержит только полезные питательные вещества.</p>
@@ -87,8 +85,8 @@
       </div>
 
     </section>
-    <section class="section-exampe">
-      <h3 class="section__title">Живой пример</h3>
+    <section class="example">
+      <h2 class="example__title">Живой пример</h2>
       <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
       <fieldset>
@@ -103,13 +101,13 @@
 
       <h5>Затраты на питание: 15 000 руб.</h5>
 
-      <div class="half-width">
-        <img class="toggle--cat" src="#" alt="toggle">
-        было <input class="range--toggle" type="range"  name="dayscount" min="1" max="20" step="1"> стало
+      <div class="toggle">
+        <img class="toggle-cat" src="#" alt="toggle">
+        было <input class="toggle-range" type="range"  name="slim-pro" min="1" max="20" step="1"> стало
       </div>
     </section>
 
-    <div class="contacts">
+    <div class="contact">
       <div class="contact__info">
         <h5>Приглашаем к сотрудничеству диллеров!</h5>
         <p>ул. Большая<br>
@@ -120,21 +118,22 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__logo-text--wraper">
-        <p class="logo--text"><strong>Cat</strong> Energy</p>
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <p class="logo__text"><strong>Cat</strong> enetgy</p>
+        </a>
       </div>
 
-      <div class="social__buttons">
-        <img class="social__button social--vk" src="#" alt="ВКонтакте" height="30" width="30">
-        <img class="social__button social--ins" src="#" alt="Инстаграм" height="30" width="30">
-        <img class="social__button social--fb" src="#" alt="Фейсбук" height="30" width="30">
+      <div class="social">
+        <img class="social__vk" src="#" alt="ВКонтакте" height="30" width="30">
+        <img class="social__ins" src="#" alt="Инстаграм" height="30" width="30">
+        <img class="social__fb" src="#" alt="Фейсбук" height="30" width="30">
       </div>
 
       <div class="vatermark">
         <p>HTML Academy</p>
         <img class="vatermark__academy" src="#" alt="logo HTML Academy" height="40" width="30">
       </div>
-
     </footer>
   </body>
 </html>
