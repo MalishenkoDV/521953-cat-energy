@@ -43,11 +43,11 @@
       <fieldset class="form__cat">
 
         <label for="cat_name">Имя:*</label>
-        <input type="search" id="cat_name" name="cat name" value="Барсик" required>
+        <input type="text" id="cat_name" name="cat name" value="Барсик" required>
         <label for="cat_weight">Вес (кг):*</label>
-        <input type="search" id="cat_weight" name="cat weight" value="7" required>
+        <input type="text" id="cat_weight" name="cat weight" value="7" required>
         <label for="cat_age">Возраст (лет):</label>
-        <input type="search" id="cat_age" name="cat age" value="7">
+        <input type="text" id="cat_age" name="cat age" value="7">
       </fieldset>
       <fieldset class="form__radiobutton">
         <label>
@@ -67,18 +67,18 @@
       <fieldset class="form__contacts">
         <legend>Контакные данные (владельца кота)</legend>
         <label>e-mail:*
-          <input type="search" name="cat email" value="kuklachev@gmail.com" required>
+          <input type="text" name="cat email" value="kuklachev@gmail.com" required>
         </label>
         <label>Телефон:*
-          <input type="search" name="cat phone" value="8 (960) 900-60-90" required>
+          <input type="text" name="cat phone" value="8 (960) 900-60-90" required>
         </label>
       </fieldset>
       <fieldset class="form__comment">
         <legend>Комментарий</legend>
         <textarea name="comment" id="comment-field" rows="10">Раскажите о всех повадках кота</textarea>
       </fieldset>
-      <div class="form__checkbox">
-        Дополнительно
+      <fieldset class="form__checkbox">
+        <legend>Дополнительно</legend>
 
         <label>
           <input type="checkbox" name="sugarfree">
@@ -96,11 +96,9 @@
           <input type="checkbox" name="vitamins">
           <span>Витамины</span>
         </label>
-      </div>
-      <div>
-        <button class="button form__submit" type="submit">Отправить заявку</button>
-        <p class="form__note">* — Обязательные поля</p>
-      </div>
+      </fieldset>
+      <button class="button form__submit" type="submit">Отправить заявку</button>
+      <p class="form__note">* — Обязательные поля</p>
     </form>
 
     <div class="contact">
@@ -121,9 +119,9 @@
       </div>
 
       <div class="social">
-        <img class="social__vk" src="#" alt="ВКонтакте" height="30" width="30">
-        <img class="social__ins" src="#" alt="Инстаграм" height="30" width="30">
-        <img class="social__fb" src="#" alt="Фейсбук" height="30" width="30">
+        <img class="social__button-vk" src="#" alt="ВКонтакте" height="30" width="30">
+        <img class="social__button-ins" src="#" alt="Инстаграм" height="30" width="30">
+        <img class="social__button-fb" src="#" alt="Фейсбук" height="30" width="30">
       </div>
 
       <div class="vatermark">
