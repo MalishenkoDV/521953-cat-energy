@@ -1,0 +1,59 @@
+.bonus {
+  margin: 0;
+  padding: 65px 55px 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: @normal-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto 64px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 65px 110px 75px 55px;
+    align-items: flex-end;
+    line-height: 1.2;
+    text-align: left;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      flex-shrink: 0;
+      margin: 0 51.2% 0 36px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    display: block;
+    width: 245px;
+    padding: 65px 30px 45px;
+    text-align: center;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      margin: 0 auto 61px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+}

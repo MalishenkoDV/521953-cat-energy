@@ -1,0 +1,237 @@
+
+.form {
+  .font();
+
+  @media (min-width: @tablet-width) {
+    .font();
+    padding-top: 25px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-top: 30px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @desctop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+
+.form__wrapper .form__fieldset {
+  @media (min-width: @desctop-width) {
+    width: calc(50% - @desctop-indent);
+    margin-bottom: 5px;
+  }
+}
+
+.form__info {
+  .font();
+  margin: 0;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  color: @text-dark;
+
+  @media (min-width: @tablet-width) {
+    .font();
+    margin-bottom: 35px;
+    padding: 5px @desctop-indent 0;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 65px;
+  }
+}
+
+.form__fieldset {
+  margin: 0 0 5px;
+  padding: 20px 0;
+  border: none;
+
+  &--frame {
+    margin: 0 - @min-indent 25px;
+    padding-right: @min-indent;
+    padding-left: @min-indent;
+    border-top: 1px solid @bg-middle;
+    border-bottom: 1px solid @bg-middle;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 30px @desctop-indent;
+
+    &--frame {
+      margin: 45px -@tablet-indent 40px @desctop-indent;
+      padding: 23px 70px 25px 0;
+      border: 1px solid @bg-middle;
+      border-right: none;
+    }
+
+    &--four-columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 100%;
+    padding: 30px 0;
+
+    &--parameters {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &--frame {
+      width: calc(50% - @desctop-indent);
+      margin: 0;
+      padding: 23px 70px 25px 0;
+      border: 1px solid @bg-middle;
+    }
+
+    &--two-columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &--four-columns {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.form__fieldset--frame .form__field {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 27px 13px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin: 0 27px 13px;
+  }
+}
+
+.form__fieldset--two-columns .form__field {
+  @media (min-width: @desctop-width) {
+    width: calc(50% - @desctop-indent);
+    margin-bottom: 5px;
+  }
+}
+
+.form__fieldset--four-columns .form__field {
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: calc(50% - @tablet-indent);
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: calc(25% - (@desctop-indent * 1.5));
+    margin-bottom: 33px;
+  }
+}
+
+.form__legend {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-top: 35px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.form__legend br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.form__field {
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__footer {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desctop-width) {
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 55px;
+  }
+}
+
+.form__submit {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 40%;
+    margin: 0 30px 0 auto;
+    padding: 15.5px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: calc(50% - @desctop-indent);
+    margin: 0;
+  }
+}
+
+.form__note {
+  .font(14px, 16px);
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 40%;
+    margin: 0 auto 0 30px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: calc(50% - @desctop-indent);
+    margin: 0;
+  }
+}
