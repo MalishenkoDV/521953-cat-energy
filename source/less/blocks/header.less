@@ -1,0 +1,129 @@
+.page {
+  &--index {
+    & .page__main {
+      padding: 0;
+    }
+
+    & .page__title {
+      padding: 0;
+    }
+
+    & .contacts {
+      background-color: #ffffff;
+    }
+  }
+
+  @media (min-width: $large-screen) {
+    &--index {
+      background-image: linear-gradient(to right, transparent 0%, transparent 52.7%, $green-1 52.7%, $green-1 100%);
+      background-position: center top;
+      background-size: 100% 695px;
+      background-repeat: no-repeat;
+
+      & .page__header {
+        color: #ffffff;
+      }
+
+      & .navigation__link--current {
+        border-bottom-color: #ffffff;
+      }
+
+      & .page__main {
+        max-width: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.page__header {
+  max-width: $large-screen;
+  margin: 0 auto;
+  color: $d-grey-3;
+
+  @media (min-width: $medium-screen) {
+    color: $d-grey-2;
+  }
+
+  @media (min-width: $large-screen) {
+    color: $d-grey-3;
+  }
+}
+
+.page__main {
+  max-width: $large-screen;
+  margin: 0 auto;
+  padding-top: 15px;
+
+  @media (min-width: $medium-screen) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $large-screen) {
+    padding-top: 45px;
+  }
+}
+
+.page__title {
+  @include container;
+  @include font(36px, 60px);
+  margin: 0 0 28px;
+  color: $d-grey-3;
+
+  @media (min-width: $medium-screen) {
+    font-size: 60px;
+  }
+}
+
+.page__sub-title {
+  @include font(24px, 1);
+  position: relative;
+  display: flex;
+  margin: 0;
+  color: $d-grey-3;
+
+  &::after {
+    content: "";
+    position: relative;
+    flex-grow: 1;
+    top: 15px;
+    right: -20px;
+    min-width: 40px;
+    height: 3px;
+    background-color: $green-1;
+  }
+
+  @media (min-width: $medium-screen) {
+    font-size: 36px;
+
+    &::before {
+      content: "";
+      position: relative;
+      flex-grow: 0;
+      top: 22px;
+      left: -30px;
+      width: 30px;
+      height: 3px;
+      margin-right: 7px;
+      background-color: $green-1;
+    }
+
+    &::after {
+      top: 22px;
+      right: -30px;
+      margin-left: 7px;
+    }
+  }
+
+  @media (min-width: $large-screen) {
+    &::before {
+      position: absolute;
+      left: -110px;
+      width: 70px;
+    }
+
+    &::after {
+      box-shadow: 80px 0 0 0 $green-1;
+    }
+  }
+}
