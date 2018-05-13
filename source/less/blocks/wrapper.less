@@ -1,17 +1,17 @@
 .container {
   display: block;
-  max-width: @desktop-width;
+  max-width: @desctop-width;
   margin: 0 auto;
-  padding-right: @s-field;
-  padding-left: @s-field;
+  padding-right: @min-indent;
+  padding-left: @min-indent;
 
   @media (min-width: @tablet-width) {
-    padding-right: @m-field;
-    padding-left: @m-field;
+    padding-right: @tablet-indent;
+    padding-left: @tablet-indent;
   }
 
-  @media (min-width: @desktop-width) {
-    padding-right: @l-field;
-    padding-left: @l-field;
+  @media (min-width: @desctop-width) {
+    padding-right: @desctop-indent;
+    padding-left: @desctop-indent;
   }
 }
