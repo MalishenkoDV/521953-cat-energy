@@ -1,0 +1,17 @@
+.container {
+  display: block;
+  max-width: @desktop-width;
+  margin: 0 auto;
+  padding-right: @s-field;
+  padding-left: @s-field;
+
+  @media (min-width: @tablet-width) {
+    padding-right: @m-field;
+    padding-left: @m-field;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: @l-field;
+    padding-left: @l-field;
+  }
+}

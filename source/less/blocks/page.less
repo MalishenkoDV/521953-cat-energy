@@ -1,0 +1,125 @@
+.page__wrapper {
+  @media (min-width: @desctop-width) {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent 0%, transparent calc(50% + @desctop-indent), @normal-color calc(50% + @desctop-indent), @normal-color 100%);
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(50% - @desctop-indent);
+    height: 100%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.page__header {
+  @media (min-width: @tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-top: 52px;
+    padding-bottom: 20px;
+  }
+}
+
+.page__navigation {
+  margin: 0 - @min-indent;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.page__title {
+  .font(36px, 60px);
+  margin: 0 0 25px;
+  padding-top: 15px;
+  color: @text-dark;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    font-size: 60px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-top: 50px;
+    margin-bottom: 25px;
+  }
+}
+
+.page__sub-title {
+  .font(24px, 1);
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-right: -@min-indent;
+  color: @text-dark;
+
+  &::before,
+  &::after {
+    display: block;
+    min-width: @tablet-indent;
+    margin-top: 15px;
+    height: 3px;
+    background-color: @normal-color;
+  }
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: -@tablet-indent;
+    margin-left: -@tablet-indent;
+    font-size: 36px;
+
+    &::before,
+    &::after {
+      margin-top: 20px;
+    }
+
+    &::before {
+      content: "";
+      width: @tablet-indent;
+      margin-right: @desctop-indent;
+    }
+
+    &::after {
+      margin-left: @desctop-indent;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    min-width: 100vw;
+    margin-left: calc((50vw - 50%) * -1);
+    margin-right: calc((50vw - 50%) * -1);
+
+    &::before,
+    &::after {
+      min-width: calc((100vw - @desctop-width) / 2);
+    }
+
+    &::after {
+      margin-left: @desctop-indent;
+    }
+  }
+}

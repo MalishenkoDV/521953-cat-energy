@@ -1,0 +1,42 @@
+.button {
+  .button-reset();
+  display: inline-block;
+  width: 100%;
+  padding: 11px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @normal-color;
+  transition-duration: 0.2s;
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: @hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    color: @text-dark;
+    background-color: @bg-light;
+
+    &:focus,
+    &:hover {
+      color: @text-dark;
+      background-color: @bg-middle;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 27px;
+  }
+}

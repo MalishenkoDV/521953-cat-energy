@@ -1,0 +1,133 @@
+.navigation {
+  position: relative;
+  z-index: 10;
+  color: @text-dark;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: @text-middle;
+  }
+
+  @media (min-width: @desctop-width) {
+    color: @text-dark;
+
+    &--white {
+      color: #ffffff;
+    }
+  }
+}
+
+.navigation__toggle {
+  .button-reset();
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: center;
+  background-size: 28px 18px;
+  background-repeat: no-repeat;
+  transition-duration: 0.2s;
+  outline: none;
+
+  &--close {
+    background-image: url("../img/icon-close.svg");
+    background-size: 18px 18px;
+  }
+}
+
+.no-js .navigation__toggle {
+  display: none;
+}
+
+.js .navigation__toggle {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  .font(20px, 20px);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+  opacity: 1;
+  transition-duration: 0.5s;
+
+  &--close {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font(18px, 25px);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    &--close {
+      position: static;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    max-width: calc(50% - @desctop-indent);
+    font-size: 20px;
+  }
+}
+
+.navigation__item {
+  min-height: 66px;
+  padding: 22.5px 20px;
+  border-bottom: 1px solid @bg-middle;
+
+  @media (min-width: @tablet-width) {
+    flex-shrink: 0;
+    min-height: auto;
+    margin-left: 35px;
+    padding: 0;
+    border: none;
+  }
+}
+
+.navigation__link {
+  transition-duration: 0.2s;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding: 7px 0;
+    border-bottom: 2px solid transparent;
+
+    &:focus,
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      border-bottom-color: @normal-color;
+    }
+  }
+}
+
+.navigation--white .navigation__link--current {
+  @media (min-width: @desctop-width) {
+    border-bottom-color: #ffffff;
+  }
+}

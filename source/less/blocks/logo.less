@@ -1,0 +1,95 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 66px;
+  padding: 24px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid @bg-middle;
+
+  &[href]:focus,
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.logo__image {
+  position: absolute;
+  top: 9px;
+  left: -2px;
+  display: block;
+  width: 75px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin-right: 15px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin-right: 10px;
+  }
+}
+
+.logo__mobile-back {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo__tablet-back {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.logo__desktop-back {
+  display: none;
+
+  @media (min-width: @desctop-width) {
+    display: block;
+  }
+}
+
+.logo__name {
+  display: block;
+  width: 101px;
+  height: 18px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 84px;
+    height: 16px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 118px;
+    height: 22px;
+  }
+}
+
+.logo__letters-cat {
+  fill: @text-dark;
+}
+
+.logo__letters-energy {
+  fill: @text-dark;
+
+  @media (min-width: @tablet-width) {
+    fill: @text-light;
+  }
+}

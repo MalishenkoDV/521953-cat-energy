@@ -1,20 +1,40 @@
+html,
 body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: #333333;
+  color: @text-dark;
   font-style: normal;
-  min-width: 320px;
+  min-width: @min-width;
   margin: 0;
   padding: 0;
-
+  display: flex;
   font-size: 14px;
   line-height: 18px;
-
-
   background-color: @bg-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+& :hover,
+& :active {
+  color: inherit;
 }
