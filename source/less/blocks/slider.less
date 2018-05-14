@@ -3,14 +3,14 @@
     padding-bottom: 55px;
     background-image: linear-gradient(to right, @bg-light 0%, @bg-light 50%, @bg-middle 50%, @bg-middle 100%);
     background-position: center bottom;
-    background-size: 100% calc(100% - 170px);
+    background-size: 100% calc(~"100% - 170px");
     background-repeat: no-repeat;
   }
 
   @media (min-width: @desctop-width) {
     flex-shrink: 0;
-    background-image: linear-gradient(to right, @bg-light 0%, @bg-light calc(50% + 20px), @bg-middle calc(50% + 20px), @bg-middle 100%);
-    background-size: 100% calc(100% - 190px);
+    background-image: linear-gradient(to right, @bg-light 0%, @bg-light calc(~"50% + 20px"), @bg-middle calc(~"50% + 20px"), @bg-middle 100%);
+    background-size: 100% calc(~"100% - 190px");
   }
 }
 
@@ -204,7 +204,7 @@
     }
 
     &:first-of-type {
-      left: calc(50% - 15px);
+      left: calc(~"50% - 15px");
     }
 
     &:not(:first-of-type) {

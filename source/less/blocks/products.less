@@ -7,7 +7,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: calc(50% - @tablet-indent);
+    width: calc(~"50% - @tablet-indent");
     padding: 0 @desctop-indent @desctop-indent;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 138px, @bg-light 138px, @bg-light 100%);
     background-position: center;
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: @desctop-width) {
-    max-width: calc(25% - (@desctop-indent * 1.5));
+    max-width: calc(~"25% - (@desctop-indent * 1.5)");
   }
 }
 
