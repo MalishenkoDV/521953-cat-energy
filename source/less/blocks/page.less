@@ -2,7 +2,7 @@
   @media (min-width: @desctop-width) {
     position: relative;
     z-index: 1;
-    background-image: linear-gradient(to right, transparent 0%, transparent calc(~"50% + @desctop-indent"), @normal-color calc(~"50% + @desctop-indent"), @normal-color 100%);
+    background-image: linear-gradient(to right, transparent 0%, transparent ~"calc(50% + @{desctop-indent})", @normal-color ~"calc(50% + @{desctop-indent})", @normal-color 100%);
     background-position: center top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    width: calc(~"50% - 40px");
+    width: ~"calc(50% - @{desctop-indent})";
     height: 100%;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: center;
@@ -110,12 +110,12 @@
 
   @media (min-width: @desctop-width) {
     min-width: 100vw;
-    margin-left: calc(~"(50vw - 50%) * -1");
-    margin-right: calc(~"(50vw - 50%) * -1");
+    margin-left: ~"calc((50vw - 50%) * -1)";
+    margin-right: ~"calc((50vw - 50%) * -1)";
 
     &::before,
     &::after {
-      min-width: calc(~"(100vw - @desctop-width) / 2");
+      min-width: ~"calc((100vw - @{desctop-width}) / 2)";
     }
 
     &::after {

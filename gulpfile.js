@@ -52,6 +52,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin"); //minimizing images
 var webp = require("gulp-webp");         //convert to webp
 var svgstore = require("gulp-svgstore");
+var run = require("gulp-run");
 
 // Collecting less -> css, minify and rename to min
 gulp.task("style", function() {
@@ -108,7 +109,7 @@ gulp.task("html", function () {
 // Run copy files
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**//*.{woff,woff2}",
+//  "source/fonts/**//*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
   ], {
@@ -132,7 +133,7 @@ gulp.task("serve", ["build"], function() {
     ui: false
   });
 
-  gulp.watch("source/less/**//*.less", ["style"]);
+//  gulp.watch("source/less/**1/*.less", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
@@ -146,5 +147,4 @@ gulp.task("build", function (done) {
     "html",
     done
   );
-});
-*/
+});*/

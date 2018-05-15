@@ -107,7 +107,7 @@
   }
 
   @media (min-width: @desctop-width) {
-    max-width: calc(~"25% - (@desctop-indent * 1.5)");
+    max-width: ~"calc(25% - (@{desctop-indent} * 1.5))";
   }
 }
 
@@ -133,7 +133,7 @@
   .font(12px, 16px);
   display: block;
   margin: 0 auto 22px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: @tablet-width) {
     .font(16px, 20px);

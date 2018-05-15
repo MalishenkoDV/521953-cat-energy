@@ -14,7 +14,10 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
+    "gulp-run": "^1.7.1",
     "gulp-webp": "^3.0.0",
+    "posthtml": "^0.11.3",
+    "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -22,7 +25,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
+    "build": "gulp build",
     "start": "gulp serve"
   },
   "browserslist": [
@@ -47,7 +50,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglyfly": "^1.4.2",
-    "posthtml-include": "^1.1.0",
     "svgstore": "^2.0.3"
   }
 }
