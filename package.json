@@ -19,7 +19,8 @@
     "posthtml": "^0.11.3",
     "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svgstore": "^2.0.3"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -49,7 +50,6 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
-    "gulp-uglyfly": "^1.4.2",
-    "svgstore": "^2.0.3"
+    "gulp-uglyfly": "^1.4.2"
   }
 }
