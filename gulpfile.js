@@ -115,7 +115,6 @@ gulp.task("build", function (done) {
       "html",
       "script",
       "fonts",
-      "serve",
       done
   );
 });
