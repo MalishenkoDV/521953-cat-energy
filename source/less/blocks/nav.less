@@ -23,7 +23,7 @@
   .button-reset();
   position: absolute;
   top: 23px;
-  right: 20px;
+  right: 0px;
   width: 24px;
   height: 18px;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -84,7 +84,6 @@
   }
 
   @media (min-width: @desctop-width) {
-    min-width: ~"calc(50% - @{desctop-indent})";
     font-size: 20px;
   }
 }
@@ -101,6 +100,13 @@
     padding: 0;
     border: none;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
+  @media (min-width: @desctop-width) {
+    margin-left: 34px;
+  }
 }
 
 .navigation__link {
@@ -108,7 +114,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 7px 0;
+    padding: 7px 2px;
     border-bottom: 2px solid transparent;
 
     &:focus,
@@ -123,6 +129,10 @@
     &--current {
       border-bottom-color: @normal-color;
     }
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 7px 0;
   }
 }
 
